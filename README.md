@@ -6,4 +6,4 @@ Submitted by: Mohammed Murtuza
 
 Here's a walkthrough of implemented lab:
 
-![Video Walkthrough](https://i.imgur.com/DTOKt5F.gif)
+<img src='https://i.imgur.com/K5KR7L4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
