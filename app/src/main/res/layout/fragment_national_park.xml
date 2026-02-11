@@ -5,29 +5,55 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="6dp">
+    android:padding="8dp">
+
+    <!-- Park Image -->
+    <ImageView
+        android:id="@+id/park_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Park Name -->
     <TextView
         android:id="@+id/park_name"
-        android:text="Park Name"
-        android:textAppearance="?attr/textAppearanceListItem"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Park Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/park_image"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Park Description -->
     <TextView
         android:id="@+id/park_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
         android:text="Park Description"
-        android:textAppearance="?attr/textAppearanceListItem"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@+id/park_name"
+        app:layout_constraintStart_toEndOf="@+id/park_image"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Park Location -->
+    <TextView
+        android:id="@+id/park_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/park_name"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <!-- TODO: Add park image -->
-    <!-- TODO: Add location or other details -->
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="Park Location"
+        android:textColor="#888888"
+        app:layout_constraintTop_toBottomOf="@+id/park_description"
+        app:layout_constraintStart_toEndOf="@+id/park_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
